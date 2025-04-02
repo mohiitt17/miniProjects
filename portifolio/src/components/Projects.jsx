@@ -18,8 +18,8 @@ const Project = () => {
        
       </div>
       <div className="pj-btn">
-      <button type="button" class="btn btn-light " style={{border: "1px solid black"}} onClick={() => window.open("https://github.com/mohiitt17/snap-clone.git")}>Git hub</button>
-      <button type="button" class="btn btn-dark " onClick={() => window.open("https://snapyyy-chat.vercel.app/")}>Live demo</button>
+      <button type="button" class="btn btn-light " style={{border: "1px solid black"}} onClick={() => window.open("https://github.com/mohiitt17/snapchat-clone.git")}>Git hub</button>
+      <button type="button" class="btn btn-dark " onClick={() => window.open("https://snapchat-clone-chi.vercel.app/")}>Live demo</button>
       </div>
     </div>
   </div>
