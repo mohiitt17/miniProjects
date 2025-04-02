@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo app</title>
+    <style>
+      * {
+        font-family: arial;
+      }
+
+      .container {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      #todo-input,
+      #todo-date {
+        height: 30px;
+        width: 200px;
+        font-size: 15px;
+        border: none;
+
+        box-shadow: 0px 0px 18px lightgray;
+        border-radius: 10px;
+        outline: none;
+      }
+
+      #todo-input::placeholder {
+        font-size: 13px;
+        padding: 10px;
+      }
+
+      #add-inputValue {
+        height: 30px;
+        width: 80px;
+        font-size: 15px;
+        border: none;
+        box-shadow: 0px 0px 5px gray;
+        border-radius: 5px;
+      }
+
+      #display-message {
+        margin-top: 24%;
+        margin-left: 34%;
+        font-size: 20px;
+        text-transform: uppercase;
+        transition: 0.5s ease all;
+      }
+
+      #add-inputValue:active,
+      #delete-btn:active {
+        transform: scale(1.4);
+        height: 25px;
+        width: 40px;
+        font-size: 12px;
+        box-shadow: none;
+      }
+
+      #delete-btn {
+        height: 30px;
+        width: 70px;
+        font-size: 15px;
+        border: none;
+        box-shadow: 0px 0px 5px gray;
+        border-radius: 5px;
+        margin-top: 15px;
+        margin-left: -30px;
+        transition: 0.5s linear all;
+      }
+
+      #message {
+        width: 100%;
+        gap: 120px;
+        display: flex;
+        padding: 10px;
+        box-shadow: 0px 0px 8px rgb(101, 101, 101);
+     width: 440px;
+        border-radius: 15px;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo App....</h1>
+      <input id="todo-input" type="text" placeholder="Enter Your ToDo here's" />
+      <input type="date" id="todo-date" />
+      <button id="add-inputValue">Add</button>
+    </div>
+    <div id="display-message"></div>
+    <script>
+      let todoINput = document.querySelector("#todo-input");
+      let inputDate = document.querySelector("#todo-date");
+      let addButton = document.querySelector("#add-inputValue");
+      let displayItem = document.querySelector("#display-message");
+      addButton.addEventListener("click", () => {
+        let todoMessage = todoINput.value;
+        let date = inputDate.value;
+        todoINput.value = "";
+        inputDate.value = "";
+        let neHtml = `
+     <div id = "message">
+            <p id = "para"> ${todoMessage}</p>
+            <p id = "para"> ${date}</p>
+            <span ><button id = "delete-btn" onClick = "displayItem.innerHTML = '' "> Delete </button> </span
+                </div>`;
+        displayItem.innerHTML += neHtml;
+      });
+    </script>
+  </body>
+</html>

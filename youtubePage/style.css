@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #181818;
+    color: #fff;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #212121;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+    height: 30px;
+}
+
+.search-bar {
+    background-color: #121212;
+    border: 1px solid #333;
+    color: #fff;
+    width: 400px;
+    padding: 8px 12px;
+    border-radius: 30px 0 0 30px;
+}
+
+.search-bar:focus {
+    background-color: #121212;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+
+.sidebar {
+    background-color: #212121;
+    height: 100vh;
+    padding-top: 20px;
+    width: 200px;
+    position: fixed;
+}
+
+.sidebar .nav-link {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #383838;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+.video-thumbnail {
+    background-color: #333;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.video-thumbnail img {
+    width: 100%;
+}
+
+.video-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.video-channel {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.category-button {
+    background-color: #383838;
+    border: none;
+    color: #fff;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.category-button:hover {
+    background-color: #555;
+}
+
+.btn-outline-light {
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-outline-light:hover {
+    background-color: #555;
+}

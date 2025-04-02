@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tic toe game </title>
+    <style>
+      .div {
+        /* gap: 30px; */
+        display: flex;
+        justify-content: center;
+        height: 400px;
+        width: 430px;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .box {
+        margin: 10px;
+        height: 70px;
+        width: 100px;
+        box-shadow: 0px 0px 5px gray;
+        border-radius: 4px;
+        font-size: 50px;
+        font-weight: 700;
+        font-family: arial;
+        text-align: center;
+        padding-top: 20px;
+        transition: 0.2s ease all;
+      }
+
+      .box:hover {
+             background-color:rgba(34, 228, 193, 0.3);
+             border-radius: 10px;
+      }
+
+      .box:active {
+        box-shadow: 0px 0px 5px rgb(96, 91, 91);
+        border-radius: 25px;
+        transform: scalex(1.1);
+      }
+
+      .disabled {
+        pointer-events : none;
+        backdrop-filter: blur(20px);
+       /* opacity: 0.5; */
+        background-color:rgba(45, 234, 159, 0.396);
+        ;
+      }
+
+      .heading {
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        position: absolute;
+        font-weight: 650;
+        top: 400px;
+        right: -160px;
+        width: 500px;
+      }
+      .main-heading {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        position: relative;
+        font-weight: 650;
+        top: 50px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+<h1 class="main-heading">
+  A TIC TAC TOE
+</h1>    <div class="div">
+      <div class="box" id="one"></div>
+      <div class="box" id="two"></div>
+      <div class="box" id="three"></div>
+      <div class="box" id="four"></div>
+      <div class="box" id="five"></div>
+      <div class="box" id="six"></div>
+      <div class="box" id="seven"></div>
+      <div class="box" id="eight"></div>
+      <div class="box" id="nine"></div>
+      <div class="heading"> </div>
+    </div>
+ 
+    <script>
+  let heading = document.querySelector('.heading');
+        let allBox = [
+           document.querySelector('#one'),
+             document.querySelector('#two'),
+             document.querySelector('#three'),
+           document.querySelector('#four'),
+             document.querySelector('#five'),
+             document.querySelector('#six'),
+             document.querySelector('#seven'),
+            document.querySelector('#eight'),    
+              document.querySelector('#nine'),
+        ];
+
+
+    let  winningPattern = [
+      [0, 1, 2],
+      [3, 4, 5,],
+      [6, 7, 8],
+      [0, 3, 6],
+      [1, 4, 7],
+      [2, 5, 8],
+      [0, 4, 8],
+      [2, 4, 6],
+    ]
+        
+    function findWinner() {
+      for ( let pattern of winningPattern ) {
+        const  [a, b, c] = pattern ;
+        if ( allBox[a].innerText !== '' &&
+        allBox[a].innerText === allBox[b].innerText &&
+        allBox[b].innerText === allBox[c].innerText
+        ) { 
+          let winvalue =  allBox[a].innerText;
+          heading.innerHTML= `${winvalue} wins!`;
+        }
+      }
+       return;
+    }
+
+
+   function tie() {
+    let checkAllbox = allBox.every(boxes => boxes.innerText !== '');
+    let winner = findWinner();
+    if (checkAllbox && !winner) {
+      heading.innerHTML = 'game is tie';
+    }
+    return null
+  }
+       
+  
+
+      let boxes = document.querySelectorAll(".box");
+      let clickCount = 1;
+      boxes.forEach((box) => {
+        box.addEventListener("click", () => {
+          clickCount++;
+          console.log(clickCount);
+          if (clickCount % 2 == 0) {
+            box.innerText = "x";
+          } else {
+            box.innerHTML = "o";
+          }  
+          box.classList.add('disabled');
+
+          let winner  = findWinner();
+          if (winner) {
+            console.log(`${winner} is win`);            
+            boxes.forEach(b => b.classList.add('disabled'));
+          }  else {
+            let tieResult = tie();
+            if (tieResult) {
+              heading.innerHTML = tieResult;
+              boxes.forEach(b => b.classList.add('disabled'));
+            }
+          }  
+        });
+      });
+    </script>
+  </body>
+</html>

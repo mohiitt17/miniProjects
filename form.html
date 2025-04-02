@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        color: rgb(14, 14, 14);
+        background-color: #eeeeee;
+        text-align: center;
+        font-family: "Mate SC", serif;
+        font-weight: 700;
+        font-style: normal;
+        border-radius: 5px;
+      }
+      .form {
+      backdrop-filter: blur(5px);
+        border: 2px solid black;
+      }
+      form {
+        background-color: #dfdada;
+        border: 2px solid black;
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 20px 30px;
+        box-shadow: 2px 5px 10px rgba (0, 0, 0, 0.5);
+      }
+      #form-control {
+        backdrop-filter: blur(5px);
+        text-align: left;
+        margin-bottom: 25px;
+      }
+      #form-control label {
+        display: block;
+        margin-bottom: 10px;
+      }
+      #form-control input,
+      #form-control select,
+      #form-control textarea {
+        border: 2px solid #777;
+        border-radius: 10px;
+        font-family: initial;
+        padding: 10px;
+        display: block;
+        width: 95%;
+      }
+      #form-control input[type="radio"],
+      #form-control input[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+      }
+      button {
+        background-color: #fff;
+        border: 1px solid #070707;
+        border-radius: 2px;
+        font-family: inherit;
+        font-size: 21px;
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        box-shadow: 0px px 0px 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <h2>registeration form</h2>
+      <form id="form">
+        <div id="form-control">
+          <label for="name" id="from-name"> Name </label>
+          <input type="text" id="name" placeholder="type your name" />
+        </div>
+        <div id="form-control">
+          <label for="email" id="label-email"> E-mail </label>
+          <input type="email" id="email" placeholder="Enter your Email" />
+        </div>
+        <div id="form-control">
+          <label for="phonenum" id="label-phone"> mobile no. </label>
+          <input
+            type="text"
+            id="phonenum"
+            placeholder="Enter your mobile number"
+          />
+        </div>
+        <div id="form-control">
+          <label for="age" id="label-age"> Age </label>
+          <input type="text" id="age" placeholder="Enter your age" />
+        </div>
+        <div id="form-control">
+          <label for="role" id="label-role">
+            which option describe you ?
+          </label>
+          <select name="role" id="role">
+            <option value="student">student</option>
+            <option value="inter">intern</option>
+            <option value="proffesional">proffessional</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+        <div id="form-control">
+          <label> are you a my freind </label>
+          <label for="recommend-1">
+            <input type="radio" id="recommend-1" name="recommend" /> Yes
+          </label>
+          <label for="recommend-2">
+            <input type="radio" id="recommend-2" name="recommend" /> No
+          </label>
+          <label for="recommend-3">
+            <input type="radio" id="recommend-3" name="recommend" /> Maybe
+          </label>
+        </div>
+        <div id="form-control">
+          <label> langauge and frameworks known </label>
+          <label for="inp-1"> <input type="checkbox" id="inp-1" />c </label>
+          <label for="inp-2"> <input type="checkbox" id="inp-2" />c++ </label>
+          <label for="inp-3">
+            <input type="checkbox" id="inp-3" />python
+          </label>
+          <label for="inp-4"> <input type="checkbox" id="inp-4" /> java </label>
+          <label for="inp-5">
+            <input type="checkbox" id="inp-" /> javascript
+          </label>
+          <label for="inp-6"> <input type="checkbox" id="inp-6" />php </label>
+        </div>
+        <div id="form-control">
+          <label for="comment" id="label-comment">
+            any comments or suggestions
+          </label>
+          <textarea
+            name="comment"
+            id="comment"
+            cols="20"
+            rows="6"
+            placeholder="enter your comment here:-"
+          ></textarea>
+          <button id="sumbit" type="submit" value="sumbit">sumbit</button>
+        </div>
+      </form>
+    </div>
+  <script src="app.js"></script>
+  </body>
+</html>

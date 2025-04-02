@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    border: border-box;
+    font-family: arial;
+}
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-search ::placeholder {
+    
+    font-family:  Verdana, sans-serif;
+}
+.navlogo{
+    height: 45px;
+    width: 100px;
+}
+.logo{
+    background-image: url("logo-removebg-preview.png");
+    height: 49px;
+    width: 100px;
+    background-size: cover;
+}
+.border{
+    background-color: 2px solid transparent;
+}
+.border :hover{
+    border: 1.5px solid white;
+    
+}
+/**box 2**/
+.icon{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+.add-one{
+    color: #cccccc;
+    font-size: 0.80rem;
+    margin-left: 15px;
+}
+.add-two{
+    margin-left: 3px;
+}
+/** box 3**/
+.nav-search{
+    display: flex;
+    height: 40px;
+    width: 620px;
+    border-radius: 5px;
+}
+.search-select{
+width: 50px;
+background-color: #f3f3f3;
+text-align: center;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+border: none;
+}
+
+.search-bar{
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+}
+.search-icon{
+    background-color: rgb(239, 184, 32);
+    color: black;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 1.2rem;
+}
+/**box 4**/
+#cty-logo {
+    text-align: center;
+    font-size: 1.2rem;
+    
+    
+}
+.nav-country{
+    width: 70px;
+    text-align: center;
+}
+
+
+/**box 5**/
+.nav-span{
+    font-size: 0.7rem;
+}
+.nav-acc{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/**box 6**/
+.nav-span{
+    font-size: 0.7rem;
+}
+.nav-order{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/**box 7**/
+.nav-cart i {
+    font-size: 28px;
+}
+.nav-cart{
+    font-size: 0.85;
+    font-weight: 700;
+}
+
+/**panel**/
+
+.nav-panel{
+    height: 45px;
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.panel-opt p{
+    display: inline;
+    margin-left: 15px;
+}
+.panel-opt{
+    width: 84%;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.panel-all{
+    margin-left: 15px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/**hero section**/
+
+.hero-section{
+    height: 400px;
+    background-image: url(hero.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero-msg{
+    height: 40px;
+    width: 87%;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.hero-msg a{
+color: #007185;
+}
+
+/**content**/
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #d4a3d2;
+}
+.box{
+    height: 400px;
+    width: 23%;
+    /* border: 2px solid black; */
+    background-color: white;
+    margin-top: 15px;
+    padding: 20px 0px 15px;
+}
+.box-img{
+ height: 300px;
+ margin-top: 1rem;
+ margin-bottom: 1rem;
+ background-size: cover;
+ background-repeat: none;
+ opacity: 50%;
+}
+.box :hover {
+    opacity: 100%;
+    transition: opacity 1s;
+}
+.box-content{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+.box-content p{
+    color: #007185;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+/**footer**/
+footer{
+    margin-top: 17px;
+}
+.footer1{
+height: 50px;
+background-color: #37475a;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 0.85rem;
+font-weight: 700;
+}
+.footer2{
+    height: 300px;
+    background-color: #222f3d;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul a{
+display: block;
+margin-top: 10px;
+}
+ul{
+    margin-top: 20px;
+    color: #dddddd;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.footer3{
+    height: 70px;
+    border-top: 0.5px solid rgb(255, 245, 245);
+    background-color: #222f3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-logo{
+    background-image: url("logo-removebg-preview.png");
+    height: 49px;
+    width: 100px;
+    background-size: cover;   
+}
+
+/**footer4**/
+
+.footer4{
+    background-color: #0f1111;
+    color: #dddddd;
+    height: 75px; 
+     font-size: 0.7rem;
+    text-align: center;
+}
+.pages{
+    padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px;
+}

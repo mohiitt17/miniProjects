@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+
+        .calculator {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 300px;
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid gray;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgb(86, 85, 85);
+        }
+
+        .button {
+            width: 65px;
+            height: 60px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0px 0px 2px black;
+            background-color: white;
+        }
+
+        .button:active {
+            box-shadow: 0px 0px 4px black;
+            transform: translateY(2px);
+            transition: background-color 0.3s ease;
+
+        }
+
+        .calc-button {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #display {
+            width: 250px;
+            height: 60px;
+            font-size: 24px;
+            border: 1px solid gray;
+            background-color: #fff;
+            text-align: center;
+            padding-right: 10px;
+            margin-bottom: 20px;
+            outline: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1> A Calculator</h1>
+
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="calc-button">
+            <button class="button" onclick="
+                 displayValue = '';
+                 document.querySelector('#display').value = displayValue;   
+                    ">c</button>
+            <button class="button" onclick="
+                displayValue = displayValue + 1;
+                document.querySelector('#display').value = displayValue;   
+                   ">1</button>
+            <button class="button" onclick="
+                displayValue = displayValue + 2;
+                document.querySelector('#display').value = displayValue;   
+                   ">2</button>
+            <button class="button" onclick="
+                displayValue = displayValue + '+';
+                document.querySelector('#display').value = displayValue;   
+                   ">+</button>
+            <button class="button" onclick="
+                displayValue = displayValue + 3;
+                document.querySelector('#display').value = displayValue;   
+                   ">3</button>
+            <button class="button" onclick="
+                displayValue = displayValue + 4;
+                document.querySelector('#display').value = displayValue;   
+                   ">4</button>
+            <button class="button" onclick="
+                displayValue = displayValue + '-';
+                document.querySelector('#display').value = displayValue;   
+                   ">-</button>
+            <button class="button" onclick="
+                displayValue = displayValue + 5;
+                document.querySelector('#display').value = displayValue;   
+                   ">5</button>
+            <button class="button" onclick="
+                displayValue = displayValue + 6;
+                document.querySelector('#display').value = displayValue;   
+                   ">6</button>
+            <button class="button" onclick="
+                displayValue = displayValue + '*';
+                document.querySelector('#display').value = displayValue;   
+                   ">*</button>
+            <button class="button" onclick="
+                displayValue = displayValue + 7;
+                document.querySelector('#display').value = displayValue;   
+                   ">7</button>
+            <button class="button" onclick="
+                displayValue = displayValue + 8;
+                document.querySelector('#display').value = displayValue;   
+                   ">8</button>
+            <button class="button" onclick="
+                displayValue = displayValue + '/';
+                document.querySelector('#display').value = displayValue;   
+                   ">/</button>
+            <button class="button" onclick="
+                displayValue = displayValue + 9;
+                document.querySelector('#display').value = displayValue;   
+                   ">9</button>
+            <button class="button" onclick="
+                displayValue = displayValue + 0;
+                document.querySelector('#display').value = displayValue;   
+                   ">0</button>
+            <button class="button" onclick="
+                displayValue = displayValue + '.';
+                document.querySelector('#display').value = displayValue;   
+                   ">.</button>
+            <button class="button" onclick="
+                displayValue = eval(displayValue);
+                document.querySelector('#display').value = displayValue;   
+                   ">=</button>
+                   <button onclick="let x = document.querySelector('#display');
+                   x.addEventListener('click',() => {
+                    if(!x == ''){
+                        x = x.legth-1;
+                        document.querySelector('#display').value = displayValue;
+                    }
+                    
+
+                   } )"></button>
+        </div>
+    </div>
+    </div>
+    <script>
+        let displayValue = '';
+        document.querySelector('#display').value = displayValue;
+    </script>
+</body>
+
+</html>

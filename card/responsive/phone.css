@@ -1,0 +1,392 @@
+@media (max-width: 600px) {
+    .nav {
+        margin-top: -30px;
+        height: 45px;
+        width: 100%;
+    }
+    
+    .nav-option {
+        display: flex;
+        gap: 10px;
+            }
+    
+    .nav-heading h2 {
+        position: relative;
+        top: 120px;
+        left: 110px;
+        font-size: 10rem;    
+    }
+    
+    .nav-option h2 {
+        display: none;
+        }
+    .nav-option i {
+        padding-top: px;
+        display: block;
+        position: relative;
+        top: 120px;
+        right: -950px;
+        font-size: 5rem;
+    }    
+    .main {
+        height: 2000px;
+        width: 1620px;
+        /* background-color: blue; */
+       position: relative;
+       /* left: 600px; */
+       top: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 0px;
+
+    }
+    
+    .box {
+        position: relative;
+        /* background-color: blanchedalmond; */
+        top: 100px;
+        background-image: url(Toji\ Fushiguro.jpeg);
+        background-size: cover;
+        background-position: center;
+        height: 1250px;
+        width: 1250px;
+        left: 50px;
+        position: relative;
+        box-shadow: 0px 0px 10px 0px black;
+    }
+    
+    
+    .box2 {
+        top: 50px;
+        right: -30px;
+        position: relative;
+        height: 60%;
+        width: 80%;
+/* background-color: aqua; */
+line-height: 15rem;
+    }
+    
+    .box2 p {
+        color: gray;
+        font-size: 7rem;
+        font-weight: 400;
+        text-align: center;
+        text-transform: capitalize;
+
+    }
+    .box2 h2 {
+        font-size: 25rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(45, 43, 43);
+        position: relative;
+        right: 30px;
+    }
+    
+    .box2 h4 {
+        font-size: 8rem;
+        color: rgb(105, 105, 105);
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    
+    .box2 button {
+        height: 10rem;
+        width: 29rem;
+        padding: 2px 2px;
+        color: black;
+        font-size: 5rem;
+        text-transform: capitalize;
+        position: relative;
+       top: 70px;
+       left: 142px;
+       font-weight: 550;
+       border-radius: 80px;
+        margin-left: 50px;
+        background-color: white;
+        transition: 0.1s linear;
+        box-shadow: 0px 0px 3px 0px black;
+    }
+    
+    .button :active {
+        background-color: rgba(0, 0, 0, 0.75);
+        color: white;
+        border: 1px solid black;
+    }
+    
+    
+
+
+    #project {
+        position: absolute;
+        top: 900px;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: -100px;
+      }
+      
+    .icon img {
+        position: relative;
+     top: 100px;
+     margin-left: 90px;
+     left: 70px;
+        height: 200px;
+        width: 200px;
+    }
+    
+    .opt-about a {
+        display: none;
+    }
+
+    .project-heading {
+        position: relative;
+        top: 3160px;
+        line-height: 16rem;
+        left: -0px;
+
+      }
+      #project h2 {
+        width: 1300px;
+        /* background-color: aquamarine; */
+        position: relative;
+        /* bottom: 500px; */
+        /* top: 500px; */
+        left: 370px;
+        font-size: 12rem;
+        font-weight: 550;
+        text-transform: uppercase;
+        color: rgb(32, 32, 32);
+      }
+      .project-heading h5 {
+        position: relative;
+        width: 900px;
+        /* top: 200px; */
+        left: 550px;
+        color: gray;
+        font-size: 4.6rem;
+        font-weight: 400;
+        text-transform: capitalize;
+      }
+      .box3 {
+        height: 70rem;
+        width: 50rem;
+        background-image: url(v.jpg);
+        background-position: center;
+        background-size: cover;
+        margin: 10px;
+        border-radius: 40px;
+        /* box-shadow: 0px 0px 20px black; */
+        /* border: 1px solid white; */
+        position: absolute;
+        top: 240rem;
+        left: 60px;
+        bottom: 200px;
+        animation: normal;
+      }
+      
+      .box4 {
+        height: 50rem;
+        width: 90rem;
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: aquamarine; */
+        justify-content: center;
+        text-transform: capitalize;
+        position: absolute;
+        top: 240rem;
+        left: 230px;
+
+        animation:appear linear ;
+          animation-timeline: view();
+          animation-range: entry 0% cover 40%;
+      }
+      
+      .experience,
+      .education {
+        position: relative;
+        height: 26rem;
+        width: 50rem;
+        left: 300px;
+        top: 0px;
+        margin-top: 100px;
+       margin-left: 100px;
+        /* border: 1px solid gray; */
+        /* box-shadow: 0px 0px 2px black; */
+        border-radius: 20px;
+      }
+      .experience p,
+      .education p {
+        font-size: 7rem;
+        text-align: center;
+        color: rgb(6, 6, 6);
+        font-size: 6rem;
+        font-weight: 400;
+        padding-top: 5px;
+        font-weight: 550;
+      }
+      .experience i,
+      .education i {
+        font-size: 6rem;
+        text-align: center;
+        width: 100%;
+        padding-top: 40px;
+        color: rgb(59, 58, 58);
+      }
+      
+      #project pre {
+        font-size: 4.2rem;
+        text-align: center;
+        padding-top: 15px;
+        line-height: px;
+        color: rgb(59, 58, 58);
+      line-height: 70px;
+        font-weight: 550;
+      }
+      .edu-p {
+    box-sizing: border-box;
+         width: 1100px;
+    
+       margin-left: -200px;
+       margin-top: 120px;
+      }
+      .edu-p p {
+      display:none;
+      }
+
+      #edu-para {
+        line-height: 5rem;
+        display: block;
+        font-size: 3.4rem;
+      }
+      #experience2 {
+        display: none;
+        position: absolute;
+        margin-top: 400rem;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        margin-bottom: -100px;
+        gap: 50px;
+        /* background-color: blueviolet; */
+        text-transform: capitalize;
+      }
+      
+      .box5 {
+        display: none;
+        position:absolute;
+        height: 33rem;
+        width: 1200px;
+        border: 1px solid gray;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 20px;
+         position: relative;
+         left: 500px;
+         animation:appear linear ;
+         animation-timeline: view();
+         animation-range: entry 0% cover 40%;
+         padding: 120px;
+      }
+      .box6 {
+        display: none;
+        position: relative;
+        height: 33rem;
+        width: 700px;
+        border: 1px solid gray;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 20px;
+        position: relative;
+        padding: 100px;
+         left: 570px;
+         animation:appear linear ;
+          animation-timeline: view();
+          animation-range: entry 0%
+          cover 40%;
+      }
+      
+      .ex-heading {
+        display: none;
+        position: relative;
+        margin-bottom: 550px;
+        left: 595px;
+        line-height: 50px;
+        text-align: center;
+      }
+      .ex-heading h2 {
+        display: none;
+        position: relative;
+        top: 600px;
+        font-size: 7rem;
+        color: #000;
+      }
+      
+      .ex-heading h4 {
+        display: none;
+        position: relative;
+        top: 500px;
+        color: rgb(105, 105, 105);
+        font-size: 5em;
+      }
+      .box5-content h2 {
+        display: none;
+        text-align: center;
+        position: relative;
+        top: -50px;
+        color: rgb(105, 105, 105);
+        font-size: 2.2rem;
+      }
+      .box5-lang {
+        display: none;
+        position: relative;
+        top: -10px;
+        text-align: center;
+        width: 200px;
+        line-height: 40px;
+        left: -10px;
+      }
+      .box5-lang h4 {
+        display: none;
+        font-size: 6rem;
+        color: rgb(4, 4, 4);
+        position: relative;
+        font-weight: 550;
+      
+        left: 40px;
+      }
+      .box5-lang p {
+        display: none;
+        position: relative;
+        top: -40px;
+        font-size: 1.5em;
+        left: 0px;
+      }
+      
+      .box5-lang img {
+        display: none;
+        position: relative;
+        top: -25px;
+        left: -60px;
+        height: 30px;
+        width: 28px;
+        /* display: none; */
+      }
+      
+      .content2 {
+        display: none;
+        position: relative;
+        padding-left: 250px;
+        top: -265px;
+      }
+      
+      
+       
+}

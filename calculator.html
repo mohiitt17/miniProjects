@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>calcultor</title>
+    <style>
+      .calcultor {
+        width: 255px;
+        border: 1px solid;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        border-radius: 10px;
+      }
+
+      .btn {
+        height: 50px;
+        width: 58px;
+        margin: 10px;
+        border-radius: 8px;
+      }
+      #show-result {
+        height: 30px;
+        width: 85%;
+        box-shadow: 0px 0px 5px gray;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid white;
+      }
+
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 650px;
+        margin-top: 30px;
+        font-weight: 600;
+        font-size: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calcultor</h1>
+    <div class="calcultor">
+      <p id="show-result"></p>
+      <button class="btn" >1</button>
+      <button class="btn" >2</button>
+      <button class="btn" >3</button>
+      <button class="btn" >4</button>
+      <button class="btn" >5</button>
+      <button class="btn" >6</button>
+      <button class="btn" >7</button>
+      <button class="btn" >8</button>
+      <button class="btn" >9</button>
+      <button class="btn" >0</button>
+      <button class="btn" >+</button>
+      <button class="btn" >-</button>
+      <button class="btn" >*</button>
+      <button class="btn" >/</button>
+      <button class="btn" >%</button>
+      <button class="btn" >.</button>
+      <button class="btn" id="result">=</button>
+      <button
+        class="btn"
+        id="clear"
+        onclick=" document.querySelector('#show-result').innerHTML = '' "
+      >
+        clear
+      </button>
+      <button class="minus" onclick="
+      ">Del</button>
+    </div>
+
+    <script>
+      let allButton = document.querySelectorAll(".btn");
+      let displayResult = document.querySelector("#show-result");
+      let finalResult = "";
+
+      allButton.forEach((button) => {
+        let butttvalue = button.innerHTML;
+        button.addEventListener("click", () => {
+          if (butttvalue == "1") {
+            finalResult += 1;
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == "2") {
+            finalResult += 2;
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == "3") {
+            finalResult += 3;
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == "4") {
+            finalResult += "4";
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == "5") {
+            finalResult += "5";
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == "6") {
+            finalResult += "6";
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == "7") {
+            finalResult += "7";
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == "8") {
+            finalResult += "8";
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == "9") {
+            finalResult += "9";
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == "0") {
+            finalResult += "0";
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == "+") {
+            finalResult += "+";
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == "-") {
+            finalResult += "-";
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == "*") {
+            finalResult += "*";
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == "/") {
+            finalResult += "/";
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == "%") {
+            finalResult += "%";
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == ".") {
+            finalResult += ".";
+            displayResult.innerHTML = finalResult;
+          } else if (butttvalue == "=") {
+            finalResult = eval(finalResult);
+            displayResult.innerHTML = finalResult;
+            console.log(finalResult);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

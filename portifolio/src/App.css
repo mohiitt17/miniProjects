@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+#nav {
+    height: 100px;
+    margin-left: 50px;
+}
+
+#nav-logo {
+    font-size: 50px;
+    font-family: 'Open Sans';
+    font-weight: 500;
+}
+
+.navbar-nav {
+    font-size: 25px;
+    gap: 50px;
+    font-weight: 400;
+    margin-left: 500px;
+}
+
+#landPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#landPage img {
+    height: 400px;
+    width: 400px;
+    position: relative;
+    left: 200px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    padding: -4px;
+}
+
+
+#text-content {
+    width: 40%;
+    margin-top: 30px;
+    height: 330px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+#text-content button {
+    height: 48px;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 150px;
+    font-size: 16px;
+    border-radius: 40px;
+    font-weight: 600;
+}
+
+.icons {
+    width: 100%;
+    margin-left: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#aboutme {
+    height: 97vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.education,
+.experience {
+    height: 200px;
+    border-radius: 20px;
+    margin-top: -250px;
+    border: 2px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+#exp {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.head-content {
+    height: 100px;
+    margin-top: 50px;
+    line-height: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.frontend,
+.backend {
+    height: 400px;
+    width: 45%;
+    text-align: center;
+    border: 3px solid gray;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    margin-top: -120px;
+}
+
+
+#project, #contact {
+    height: 100vh;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col {
+    height: 430px;
+    border-radius: 30px;
+    margin-left: 50px;
+}
+
+.col img {
+    margin-top: 20px;
+    height: 250px;
+    width: 250px;
+    align-self: center;
+    border: 2px solid gray;
+    border-radius: 20%;
+}
+
+.col button {
+    width: 40%;
+    height: 50px;
+    margin-top: -10px;
+    border-radius: 30px;
+}
+
+.pj-btn {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    height: 70px;
+}
+
+.contact-links {
+    width: 40%;
+    margin-top: -100px;
+    border: 3px solid gray;
+    border-radius: 20px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.email, .linkedin {
+height: 100%;
+display: flex;
+align-items: center;
+}
+
+.email p, .linkedin p {
+ position: relative;
+ top: 7px;
+ left: 5px;
+}
+
+#footer {
+    margin-top: 100px;
+    align-self: flex-end;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+}

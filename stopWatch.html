@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .time {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 20px;
+            position: absolute;
+            top: 50%;
+            left: 43%;
+            transform: translate(-50%, -50%);
+            font-family: arial;
+        }
+        .time p {
+            position: relative;
+            bottom: 45px;
+            left: 73px;
+            font-size: 30px;
+            font-weight: lighter;
+        }
+        #hours {
+            position: relative;
+    left: 60px;
+        }
+
+        button {
+            font-size: 20px;
+            position: relative;
+            top: 80px;
+margin-left: 30px;      
+      left: 280px;
+            height: 35px;
+            width: 60px;
+            padding: 5px;
+        }
+        #main-heading {
+            font-family: arial;
+            text-align: center;
+            margin-top: 240px;
+            margin-left: -80px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-heading"> A Stop Watch...</h1>
+
+    <div class="time">
+        <h2>second</h2>
+    <p id="sec">00</p>
+    <h2>minutes</h2>
+    <p id="min">00</p>
+    <h2>hour</h2>
+    <p id="hours">00</p>
+    <button id="start">start</button>
+    <button id="stop">
+        stop
+    </button>
+</div>
+
+    <script>
+         let second = document.querySelector('#sec');
+      let  secondCounts = 0;
+      let minute = document.querySelector('#min');
+      let minuteCount = 0;
+      let hours = document.querySelector('#hours');
+      let hourcount = 0;
+      let startButton = document.querySelector('#start');
+      let stopButton = document.querySelector('#stop');
+      let intervalSeconds;
+      
+   
+
+function seconds() { 
+    secondCounts++;  
+      second.innerHTML= secondCounts; 
+      if( secondCounts === 60) {
+    secondCounts = 0;
+    minuteCount++;
+    minute.innerHTML = minuteCount;
+         }
+
+         if( minuteCount === 60) {
+            minuteCount = 0;
+            hourcount++;
+            hours.innerHTML = hourcount;
+         }
+
+       }  
+
+ startButton.addEventListener('click', () => {      
+ intervalSeconds  = setInterval(seconds, 1000);
+}
+);
+
+stopButton.addEventListener('click', () => {
+ clearInterval(intervalSeconds);
+})
+    
+
+
+
+ 
+    </script>
+</body>
+</html>
