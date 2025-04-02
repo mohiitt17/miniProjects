@@ -18,8 +18,8 @@ const Project = () => {
        
       </div>
       <div className="pj-btn">
-      <button type="button" class="btn btn-light " style={{border: "1px solid black"}}>Git hub</button>
-      <button type="button" class="btn btn-dark ">Live demo</button>
+      <button type="button" class="btn btn-light " style={{border: "1px solid black"}} onClick={() => window.open("https://github.com/mohiitt17/snap-clone.git")}>Git hub</button>
+      <button type="button" class="btn btn-dark " onClick={() => window.open("https://snapyyy-chat.vercel.app/")}>Live demo</button>
       </div>
     </div>
   </div>
@@ -31,8 +31,12 @@ const Project = () => {
         
       </div>
       <div className="pj-btn">
-      <button type="button" class="btn btn-light " style={{border: "1px solid black"}}>Git hub</button>
-      <button type="button" class="btn btn-dark ">Live demo</button>
+        
+      <button type="button" class="btn btn-light " style={{border: "1px solid black"}} onClick={() => window.open("https://github.com/mohiitt17/Telegram-Clone.git")}>Git hub</button>
+    
+    
+      <button type="button" class="btn btn-dark "onClick={() => window.open("https://telegram-clone-pi.vercel.app/")} >Live demo</button>
+    
       </div>
     </div>
   </div>
@@ -43,7 +47,7 @@ const Project = () => {
         <h3 class="card-title">Mini Projects</h3>
       </div>
       <div className="pj-btn">
-      <button type="button" class="btn btn-light " style={{border: "1px solid black"}}>Git hub</button>
+      <button type="button" class="btn btn-light " style={{border: "1px solid black"}} onClick={() => window.open("https://github.com/mohiitt17/miniProjects.git")}>Git hub</button>
       </div>
     </div>
   </div>
