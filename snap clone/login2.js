@@ -46,7 +46,7 @@ function checkInput () {
                   hidePass.style.top = '41.5%';
                   nextPageBtn.style.backgroundColor= '#0fadff';
                   passwordInput.style.backgroundColor = 'white'
-                  window.location.href = "../html/finalPage.html";
+                  window.location.href = "./finalPage.html";
               } else {
                   showMessage.innerHTML = `pass : 17oct2005`
                   passwordInput.style.border = "2px solid #d91656";

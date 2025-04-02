@@ -101,7 +101,7 @@ loginButton.addEventListener("click", () => {
       document.getElementById("username-input").style.backgroundColor = "#fff";
       document.getElementById("username-input").style.borderRadius = "10px";
       errorText.innerHTML = ``;
-      window.location.href = "../html/loginPage2.html";
+      window.location.href = "./loginPage2.html";
 
     }, 1000);
   } else if (userInput == "") {
